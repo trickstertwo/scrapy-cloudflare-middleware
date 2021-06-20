@@ -5,9 +5,9 @@ from setuptools import setup, find_packages
 try:
     from pip._internal.download import PipSession
     pip_session = PipSession()
-    except ImportError:
-        from pip._internal.network.session import PipSession
-        pip_session = PipSession()
+except ImportError:
+    from pip._internal.network.session import PipSession
+    pip_session = PipSession()
         
 from pip._internal.req import parse_requirements
 
