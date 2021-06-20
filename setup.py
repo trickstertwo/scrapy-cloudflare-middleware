@@ -5,7 +5,7 @@ from setuptools import setup, find_packages
 try:
     from pip._internal.download import PipSession
     pip_session = PipSession()
-    except ImportError:  # for pip >= 20
+    except ImportError:
         from pip._internal.network.session import PipSession
         pip_session = PipSession()
         
