@@ -18,7 +18,10 @@ def get_requirements(source):
 
     install_reqs = parse_requirements(filename=source, session=PipSession())
 
-    return [str(ir.req) for ir in install_reqs]
+    try:
+        return [str(ir.req) for ir in install_reqs]
+    except Exception:
+        return [str(ir.requirement) for ir in install_reqs]
 
 setup(
     packages=find_packages(),
