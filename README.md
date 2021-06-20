@@ -11,7 +11,7 @@ pip install git+https://github.com/trickstertwo/scrapy-cloudflare-middleware.git
 
 ### Usage
 
-Add the middleware to your `DOWNLOADER_MIDDLEWARES` settings
+Add the middleware to your `DOWNLOADER_MIDDLEWARES` in settings.py
 
 ```python
 DOWNLOADER_MIDDLEWARES = {
