@@ -6,7 +6,7 @@ A Scrapy middleware to bypass the CloudFlare's anti-bot protection, based on [cl
 
 ### Installation
 ```
-pip install scrapy_cloudflare_middleware
+pip install git+https://github.com/trickstertwo/scrapy-cloudflare-middleware.git
 ```
 
 ### Usage
